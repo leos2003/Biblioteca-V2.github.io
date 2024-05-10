@@ -1,0 +1,867 @@
+﻿<krpano version="1.21" title="Virtual Tour">
+
+	<include url="skin/vtourskin.xml" />
+
+	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
+	<skin_settings maps="true"
+	               maps_type="google"
+	               maps_bing_api_key=""
+	               maps_google_api_key=""
+	               maps_zoombuttons="false"
+	               maps_loadonfirstuse="true"
+	               gyro="true"
+	               gyro_keeplookingdirection="false"
+	               webvr="true"
+	               webvr_keeplookingdirection="true"
+	               webvr_prev_next_hotspots="true"
+	               autotour="false"
+	               littleplanetintro="false"
+	               followmousecontrol="false"
+	               title="true"
+	               thumbs="true"
+	               thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
+	               thumbs_opened="false"
+	               thumbs_text="false"
+	               thumbs_dragging="true"
+	               thumbs_onhoverscrolling="false"
+	               thumbs_scrollbuttons="false"
+	               thumbs_scrollindicator="false"
+	               thumbs_loop="false"
+	               tooltips_buttons="false"
+	               tooltips_thumbs="false"
+	               tooltips_hotspots="false"
+	               tooltips_mapspots="false"
+	               deeplinking="false"
+	               loadscene_flags="MERGE"
+	               loadscene_blend="OPENBLEND(0.5, 0.0, 0.75, 0.05, linear)"
+	               loadscene_blend_prev="SLIDEBLEND(0.5, 180, 0.75, linear)"
+	               loadscene_blend_next="SLIDEBLEND(0.5,   0, 0.75, linear)"
+	               loadingtext=""
+	               layout_width="100%"
+	               layout_maxwidth="814"
+	               controlbar_width="-24"
+	               controlbar_height="40"
+	               controlbar_offset="20"
+	               controlbar_offset_closed="-40"
+	               controlbar_overlap.no-fractionalscaling="10"
+	               controlbar_overlap.fractionalscaling="0"
+	               design_skin_images="vtourskin.png"
+	               design_bgcolor="0x2D3E50"
+	               design_bgalpha="0.8"
+	               design_bgborder="0"
+	               design_bgroundedge="1"
+	               design_bgshadow="0 4 10 0x000000 0.3"
+	               design_thumbborder_bgborder="3 0xFFFFFF 1.0"
+	               design_thumbborder_padding="2"
+	               design_thumbborder_bgroundedge="0"
+	               design_text_css="color:#FFFFFF; font-family:Arial;"
+	               design_text_shadow="1"
+	               />
+
+	<!--
+	    For an alternative skin design either change the <skin_settings> values 
+	    from above or optionally include one of the predefined designs from below.
+	-->
+	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
+	<!-- <include url="skin/vtourskin_design_glass.xml"       /> -->
+	<!-- <include url="skin/vtourskin_design_ultra_light.xml" /> -->
+	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
+	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+	
+
+	
+	<scene name="scene_CD-00" title="CD-00" onstart="" thumburl="panos/CD-00.tiles/thumb.jpg" lat="18.48545833" lng="-69.94864444" alt="22.73" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3" >
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/CD-00.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/CD-00.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-7.135" atv="19.073" linkedscene="scene_cd-1" linkedscene_lookat="16.44,13.65,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-156.743" atv="26.086" linkedscene="scene_pm-01" linkedscene_lookat="12.3,-6.26,120.0" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="90.326" atv="25.567" linkedscene="scene_cr-1" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_CD-1" title="CD-1" onstart="" thumburl="panos/CD-1.tiles/thumb.jpg" lat="" lng="" alt="" heading="" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/CD-1.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/CD-1.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-82.852" atv="26.938" linkedscene="scene_co-1" linkedscene_lookat="84.71,3.77,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="26.554" atv="22.527" linkedscene="scene_sc-1" linkedscene_lookat="91.78,-2.86,120.0" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-14.488" atv="9.195" linkedscene="scene_cd-2" linkedscene_lookat="-10.74,-0.01,120.0" />
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="-176.741" atv="26.028" linkedscene="scene_cd-00" linkedscene_lookat="-160.51,12.56,120.0" />
+
+	</scene>
+
+	<scene name="scene_CD-2" title="CD-2" onstart="" thumburl="panos/CD-2.tiles/thumb.jpg" lat="" lng="" alt="" heading="" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/CD-2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/CD-2.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-17.351" atv="10.078" linkedscene="scene_cd-3" linkedscene_lookat="7.63,0.48,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="177.783" atv="23.322" linkedscene="scene_cd-1" linkedscene_lookat="-174.99,8.14,120.0" />
+
+	</scene>
+
+	<scene name="scene_CD-3" title="CD-3" onstart="" thumburl="panos/CD-3.tiles/thumb.jpg" lat="" lng="" alt="" heading="" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/CD-3.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/CD-3.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-11.783" atv="10.868" linkedscene="scene_cd-4" linkedscene_lookat="-43.36,0.16,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-172.586" atv="25.607" linkedscene="scene_cd-2" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_CD-4" title="CD-4" onstart="" thumburl="panos/CD-4.tiles/thumb.jpg" lat="18.48545833" lng="-69.94864444" alt="22.73" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/CD-4.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/CD-4.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="128.983" atv="31.653" linkedscene="scene_cd-3" linkedscene_lookat="-171.83,0.11,120.0" />
+
+	</scene>
+
+	<scene name="scene_CI-1" title="CI-1" onstart="" thumburl="panos/CI-1.tiles/thumb.jpg" lat="18.48545833" lng="-69.94864444" alt="22.73" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/CI-1.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/CI-1.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="7.248" atv="12.959" linkedscene="scene_ci-2" linkedscene_lookat="2.53,0.79,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="168.573" atv="20.847" linkedscene="scene_e-2" linkedscene_lookat="-34.54,-7.14,120.0" />
+
+	</scene>
+
+	<scene name="scene_CI-2" title="CI-2" onstart="" thumburl="panos/CI-2.tiles/thumb.jpg" lat="18.48545833" lng="-69.94864444" alt="22.73" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/CI-2.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/CI-2.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-40.924" atv="17.727" linkedscene="scene_ci-3" linkedscene_lookat="36.62,9.49,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="147.000" atv="19.470" linkedscene="scene_ci-1" linkedscene_lookat="-186.87,10.18,120.0" />
+
+	</scene>
+
+	<scene name="scene_CI-3" title="CI-3" onstart="" thumburl="panos/CI-3.tiles/thumb.jpg" lat="" lng="" alt="" heading="" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/CI-3.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/CI-3.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-166.491" atv="30.821" linkedscene="scene_ci-2" linkedscene_lookat="-201.47,0.09,120.0" />
+
+	</scene>
+
+	<scene name="scene_CO-1" title="CO-1" onstart="" thumburl="panos/CO-1.tiles/thumb.jpg" lat="" lng="" alt="" heading="" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/CO-1.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/CO-1.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-158.333" atv="22.983" linkedscene="scene_cd-1" linkedscene_lookat="0.0,0.0,120.0" />
+
+	</scene>
+
+	<scene name="scene_CR-1" title="CR-1" onstart="" thumburl="panos/CR-1.tiles/thumb.jpg" lat="" lng="" alt="" heading="" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/CR-1.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/CR-1.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="55.804" atv="15.168" linkedscene="scene_cr-2" linkedscene_lookat="-184.5,0.96,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-2.209" atv="7.657" linkedscene="scene_cd-00" linkedscene_lookat="-4.25,-0.38,120.0" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-108.028" atv="22.103" linkedscene="scene_ent-3" linkedscene_lookat="3.95,-4.76,120.0" />
+
+	</scene>
+
+	<scene name="scene_CR-2" title="CR-2" onstart="" thumburl="panos/CR-2.tiles/thumb.jpg" lat="" lng="" alt="" heading="" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/CR-2.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/CR-2.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="172.490" atv="16.849" linkedscene="scene_cr-3" linkedscene_lookat="-192.21,-5.48,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-4.850" atv="20.545" linkedscene="scene_cr-1" linkedscene_lookat="3.74,1.74,120.0" />
+
+	</scene>
+
+	<scene name="scene_CR-3" title="CR-3" onstart="" thumburl="panos/CR-3.tiles/thumb.jpg" lat="" lng="" alt="" heading="" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/CR-3.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/CR-3.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="163.171" atv="16.696" linkedscene="scene_cr-4" linkedscene_lookat="-190.47,0.32,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-2.944" atv="15.941" linkedscene="scene_cr-2" linkedscene_lookat="13.03,1.75,120.0" />
+
+	</scene>
+
+	<scene name="scene_CR-4" title="CR-4" onstart="" thumburl="panos/CR-4.tiles/thumb.jpg" lat="" lng="" alt="" heading="" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/CR-4.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/CR-4.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="170.058" atv="22.413" linkedscene="scene_cr-5" linkedscene_lookat="-2.23,1.36,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="7.509" atv="10.450" linkedscene="scene_cr-3" linkedscene_lookat="17.2,-1.16,120.0" />
+
+	</scene>
+
+	<scene name="scene_CR-5" title="CR-5" onstart="" thumburl="panos/CR-5.tiles/thumb.jpg" lat="18.48545833" lng="-69.94864444" alt="22.73" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/CR-5.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/CR-5.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="1.082" atv="42.387" linkedscene="scene_cr-6" linkedscene_lookat="0.0,0.0,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-171.969" atv="24.596" linkedscene="scene_cr-4" linkedscene_lookat="24.61,-0.8,120.0" />
+
+	</scene>
+
+	<scene name="scene_CR-6" title="CR-6" onstart="" thumburl="panos/CR-6.tiles/thumb.jpg" lat="18.48545833" lng="-69.94864444" alt="22.73" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/CR-6.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/CR-6.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-6.463" atv="21.051" linkedscene="scene_cr-7" linkedscene_lookat="-252.48,-4.95,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-78.057" atv="14.175" linkedscene="scene_cr-5" linkedscene_lookat="-170.56,7.08,120.0" />
+
+	</scene>
+
+	<scene name="scene_CR-7" title="CR-7" onstart="" thumburl="panos/CR-7.tiles/thumb.jpg" lat="" lng="" alt="" heading="" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/CR-7.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/CR-7.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-1.319" atv="15.312" linkedscene="scene_cr-6" linkedscene_lookat="-87.09,3.22,120.0" />
+
+	</scene>
+
+	<scene name="scene_CT-1" title="CT-1" onstart="" thumburl="panos/CT-1.tiles/thumb.jpg" lat="18.48545833" lng="-69.94864444" alt="22.73" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/CT-1.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/CT-1.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="83.246" atv="20.944" linkedscene="scene_ent-3" linkedscene_lookat="70.25,-7.32,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-102.161" atv="21.311" linkedscene="scene_ct-2" linkedscene_lookat="-62.9,1.45,120.0" />
+
+	</scene>
+
+	<scene name="scene_CT-2" title="CT-2" onstart="" thumburl="panos/CT-2.tiles/thumb.jpg" lat="18.48545833" lng="-69.94864444" alt="22.73" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/CT-2.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/CT-2.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-62.137" atv="10.334" linkedscene="scene_ct-3" linkedscene_lookat="10.15,-19.22,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="79.165" atv="9.629" linkedscene="scene_ct-1" linkedscene_lookat="25.07,14.56,120.0" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-4.541" atv="11.569" linkedscene="scene_e-2" linkedscene_lookat="-30.02,18.13,120.0" />
+
+	</scene>
+
+	<scene name="scene_CT-3" title="CT-3" onstart="" thumburl="panos/CT-3.tiles/thumb.jpg" lat="18.48541389" lng="-69.94865278" alt="19.70" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/CT-3.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/CT-3.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="158.465" atv="16.797" linkedscene="scene_ct-2" linkedscene_lookat="60.73,4.48,120.0" />
+
+	</scene>
+
+	<scene name="scene_CU-01" title="CU-01" onstart="" thumburl="panos/CU-01.tiles/thumb.jpg" lat="18.48545833" lng="-69.94864444" alt="22.73" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/CU-01.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/CU-01.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="8.518" atv="10.000" linkedscene="scene_cu-02" linkedscene_lookat="15.24,-6.67,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="168.366" atv="40.413" linkedscene="scene_li-03" linkedscene_lookat="177.74,-3.94,120.0" />
+
+	</scene>
+
+	<scene name="scene_CU-02" title="CU-02" onstart="" thumburl="panos/CU-02.tiles/thumb.jpg" lat="18.48545833" lng="-69.94864444" alt="22.73" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/CU-02.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/CU-02.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="12.008" atv="7.494" linkedscene="scene_cu-03" linkedscene_lookat="17.18,-0.81,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="161.228" atv="17.130" linkedscene="scene_cu-01" linkedscene_lookat="-192.46,2.34,120.0" />
+
+	</scene>
+
+	<scene name="scene_CU-03" title="CU-03" onstart="" thumburl="panos/CU-03.tiles/thumb.jpg" lat="18.48545833" lng="-69.94864444" alt="22.73" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/CU-03.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/CU-03.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-1.982" atv="5.701" linkedscene="scene_jb-1" linkedscene_lookat="17.42,4.44,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="158.103" atv="16.524" linkedscene="scene_cu-02" linkedscene_lookat="-197.51,3.64,120.0" />
+
+	</scene>
+
+	<scene name="scene_E-1" title="E-1" onstart="" thumburl="panos/E-1.tiles/thumb.jpg" lat="" lng="" alt="" heading="" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/E-1.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/E-1.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_E-2" title="E-2" onstart="" thumburl="panos/E-2.tiles/thumb.jpg" lat="18.48545833" lng="-69.94864444" alt="22.73" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/E-2.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/E-2.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="8.095" atv="12.151" linkedscene="scene_ci-1" linkedscene_lookat="-0.06,-2.85,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-61.328" atv="13.035" linkedscene="scene_e-3" linkedscene_lookat="-10.83,-3.73,120.0" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="151.070" atv="27.267" linkedscene="scene_cd-00" linkedscene_lookat="0.0,0.0,120.0" />
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="-97.619" atv="14.898" linkedscene="scene_ct-2" linkedscene_lookat="108.49,-0.03,120.0" />
+
+	</scene>
+
+	<scene name="scene_E-3" title="E-3" onstart="" thumburl="panos/E-3.tiles/thumb.jpg" lat="18.48545833" lng="-69.94864444" alt="22.73" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/E-3.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/E-3.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-7.006" atv="-2.897" linkedscene="scene_e-5" linkedscene_lookat="-365.9,-4.59,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="83.147" atv="40.459" linkedscene="scene_e-2" linkedscene_lookat="-75.84,4.6,120.0" />
+
+	</scene>
+
+	<scene name="scene_E-5" title="E-5" onstart="" thumburl="panos/E-5.tiles/thumb.jpg" lat="18.48545833" lng="-69.94864444" alt="22.73" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/E-5.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/E-5.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-18.256" atv="12.397" linkedscene="scene_li-01" linkedscene_lookat="30.41,-0.21,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="16.253" atv="8.500" linkedscene="scene_p2-03" linkedscene_lookat="-178.9,17.21,120.0" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="77.875" atv="39.437" linkedscene="scene_e-3" linkedscene_lookat="89.06,7.13,120.0" />
+
+	</scene>
+
+	<scene name="scene_ENT-1" title="ENT-1" onstart="" thumburl="panos/ENT-1.tiles/thumb.jpg" lat="18.48575556" lng="-69.94876389" alt="25.37" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="-353.685" vlookat="-2.925" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/ENT-1.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/ENT-1.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-9.384" atv="6.936" linkedscene="scene_ent-2" linkedscene_lookat="192.46,-1.28,120.0" />
+
+	</scene>
+
+	<scene name="scene_ENT-2" title="ENT-2" onstart="" thumburl="panos/ENT-2.tiles/thumb.jpg" lat="" lng="" alt="" heading="" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/ENT-2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/ENT-2.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-151.253" atv="16.766" linkedscene="scene_ent-3" linkedscene_lookat="-4.53,-8.44,120.0" />
+
+	</scene>
+
+	<scene name="scene_ENT-3" title="ENT-3" onstart="" thumburl="panos/ENT-3.tiles/thumb.jpg" lat="18.48545833" lng="-69.94864444" alt="22.73" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/ENT-3.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/ENT-3.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="49.801" atv="11.742" linkedscene="scene_cr-1" linkedscene_lookat="27.19,3.38,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-28.470" atv="17.459" linkedscene="scene_ct-1" linkedscene_lookat="-87.97,14.13,120.0" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-153.769" atv="11.060" linkedscene="scene_ent-1" linkedscene_lookat="-352.68,-15.78,120.0" />
+
+	</scene>
+
+	<scene name="scene_JB-1" title="JB-1" onstart="" thumburl="panos/JB-1.tiles/thumb.jpg" lat="18.48545833" lng="-69.94864444" alt="22.73" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/JB-1.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/JB-1.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-28.675" atv="29.298" linkedscene="scene_jb-2" linkedscene_lookat="-70.42,-0.88,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="151.639" atv="26.936" linkedscene="scene_cu-03" linkedscene_lookat="-195.76,2.05,120.0" />
+
+	</scene>
+
+	<scene name="scene_JB-2" title="JB-2" onstart="" thumburl="panos/JB-2.tiles/thumb.jpg" lat="" lng="" alt="" heading="" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/JB-2.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/JB-2.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="35.484" atv="29.768" linkedscene="scene_jb-3" linkedscene_lookat="17.55,0.78,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="165.024" atv="38.231" linkedscene="scene_jb-1" linkedscene_lookat="-198.52,2.66,120.0" />
+
+	</scene>
+
+	<scene name="scene_JB-3" title="JB-3" onstart="" thumburl="panos/JB-3.tiles/thumb.jpg" lat="" lng="" alt="" heading="" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/JB-3.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/JB-3.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="12.794" atv="10.471" linkedscene="scene_jb-4" linkedscene_lookat="8.41,0.62,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="173.963" atv="18.488" linkedscene="scene_jb-2" linkedscene_lookat="-180.49,26.13,120.0" />
+
+	</scene>
+
+	<scene name="scene_JB-4" title="JB-4" onstart="" thumburl="panos/JB-4.tiles/thumb.jpg" lat="" lng="" alt="" heading="" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/JB-4.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/JB-4.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-163.751" atv="20.841" linkedscene="scene_jb-3" linkedscene_lookat="-171.09,9.06,120.0" />
+
+	</scene>
+
+	<scene name="scene_LD-1" title="LD-1" onstart="" thumburl="panos/LD-1.tiles/thumb.jpg" lat="18.48545833" lng="-69.94864444" alt="22.73" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/LD-1.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/LD-1.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="1.199" atv="20.051" linkedscene="scene_ld-2" linkedscene_lookat="0.31,-0.86,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="135.482" atv="29.341" linkedscene="scene_p2-04" linkedscene_lookat="-118.28,0.3,120.0" />
+
+	</scene>
+
+	<scene name="scene_LD-2" title="LD-2" onstart="" thumburl="panos/LD-2.tiles/thumb.jpg" lat="18.48545833" lng="-69.94864444" alt="22.73" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/LD-2.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/LD-2.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-12.371" atv="8.064" linkedscene="scene_ld-3" linkedscene_lookat="14.93,-0.95,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-94.970" atv="14.158" linkedscene="scene_ld-1" linkedscene_lookat="-181.67,-0.66,120.0" />
+
+	</scene>
+
+	<scene name="scene_LD-3" title="LD-3" onstart="" thumburl="panos/LD-3.tiles/thumb.jpg" lat="18.48545833" lng="-69.94864444" alt="22.73" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/LD-3.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/LD-3.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-154.673" atv="28.555" linkedscene="scene_ld-2" linkedscene_lookat="-75.67,-6.64,120.0" />
+
+	</scene>
+
+	<scene name="scene_LI-01" title="LI-01" onstart="" thumburl="panos/LI-01.tiles/thumb.jpg" lat="18.48545833" lng="-69.94864444" alt="22.73" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/LI-01.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/LI-01.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="8.865" atv="10.912" linkedscene="scene_li-02" linkedscene_lookat="4.45,0.48,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="141.469" atv="22.095" linkedscene="scene_p2-03" linkedscene_lookat="197.77,13.94,120.0" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-121.189" atv="22.261" linkedscene="scene_e-5" linkedscene_lookat="96.57,11.94,120.0" />
+
+	</scene>
+
+	<scene name="scene_LI-02" title="LI-02" onstart="" thumburl="panos/LI-02.tiles/thumb.jpg" lat="18.48545833" lng="-69.94864444" alt="22.73" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/LI-02.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/LI-02.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="9.406" atv="8.560" linkedscene="scene_li-03" linkedscene_lookat="7.3,-6.83,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="168.449" atv="24.742" linkedscene="scene_li-01" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_LI-03" title="LI-03" onstart="" thumburl="panos/LI-03.tiles/thumb.jpg" lat="18.48545833" lng="-69.94864444" alt="22.73" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/LI-03.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/LI-03.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-9.652" atv="12.464" linkedscene="scene_cu-01" linkedscene_lookat="3.5,-6.54,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="171.021" atv="17.940" linkedscene="scene_li-02" linkedscene_lookat="-186.47,6.93,120.0" />
+
+	</scene>
+
+	<scene name="scene_P2-01" title="P2-01" onstart="" thumburl="panos/P2-01.tiles/thumb.jpg" lat="" lng="" alt="" heading="" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/P2-01.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/P2-01.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_P2-03" title="P2-03" onstart="" thumburl="panos/P2-03.tiles/thumb.jpg" lat="" lng="" alt="" heading="" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/P2-03.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/P2-03.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-171.336" atv="17.887" linkedscene="scene_p2-04" linkedscene_lookat="-45.4,6.57,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="24.663" atv="22.201" linkedscene="scene_li-01" linkedscene_lookat="-145.82,5.21,120.0" />
+
+	</scene>
+
+	<scene name="scene_P2-04" title="P2-04" onstart="" thumburl="panos/P2-04.tiles/thumb.jpg" lat="18.48545833" lng="-69.94864444" alt="22.73" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/P2-04.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/P2-04.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="6.280" atv="11.157" linkedscene="scene_ld-1" linkedscene_lookat="22.71,-1.27,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-114.695" atv="16.181" linkedscene="scene_p2-05" linkedscene_lookat="-156.32,0.4,120.0" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="168.203" atv="14.423" linkedscene="scene_p2-03" linkedscene_lookat="21.55,0.67,120.0" />
+
+	</scene>
+
+	<scene name="scene_P2-05" title="P2-05" onstart="" thumburl="panos/P2-05.tiles/thumb.jpg" lat="" lng="" alt="" heading="" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/P2-05.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/P2-05.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-176.260" atv="11.383" linkedscene="scene_p2-06" linkedscene_lookat="-160.41,10.8,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="99.615" atv="25.563" linkedscene="scene_p2-04" linkedscene_lookat="-167.58,5.35,120.0" />
+
+	</scene>
+
+	<scene name="scene_P2-06" title="P2-06" onstart="" thumburl="panos/P2-06.tiles/thumb.jpg" lat="" lng="" alt="" heading="" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/P2-06.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/P2-06.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="170.191" atv="20.098" linkedscene="scene_p2-07" linkedscene_lookat="-196.08,9.62,120.0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="15.781" atv="18.081" linkedscene="scene_p2-05" linkedscene_lookat="120.52,-1.34,120.0" />
+
+	</scene>
+
+	<scene name="scene_P2-07" title="P2-07" onstart="" thumburl="panos/P2-07.tiles/thumb.jpg" lat="" lng="" alt="" heading="" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/P2-07.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/P2-07.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="1.835" atv="25.159" linkedscene="scene_p2-06" linkedscene_lookat="27.33,12.66,120.0" />
+
+	</scene>
+
+	<scene name="scene_PM-01" title="PM-01" onstart="" thumburl="panos/PM-01.tiles/thumb.jpg" lat="18.48545833" lng="-69.94864444" alt="22.73" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/PM-01.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/PM-01.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="7.543" atv="16.837" linkedscene="scene_e-2" linkedscene_lookat="-26.98,-8.15,120.0" />
+
+	</scene>
+
+	<scene name="scene_SC-1" title="SC-1" onstart="" thumburl="panos/SC-1.tiles/thumb.jpg" lat="18.48545833" lng="-69.94864444" alt="22.73" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/SC-1.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/SC-1.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="2.532" atv="11.604" linkedscene="scene_cd-1" linkedscene_lookat="0.0,0.0,120.0" />
+
+	</scene>
+
+
+</krpano>
