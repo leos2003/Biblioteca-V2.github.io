@@ -68,6 +68,7 @@
 	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
 	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
 	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+	
 	<scene name="scene_ENT-1" title="ENT-1" onstart="" thumburl="panos/ENT-1.tiles/thumb.jpg" lat="18.48575556" lng="-69.94876389" alt="25.37" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
