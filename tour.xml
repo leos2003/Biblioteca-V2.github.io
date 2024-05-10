@@ -68,7 +68,21 @@
 	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
 	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
 	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
-	
+	<scene name="scene_ENT-1" title="ENT-1" onstart="" thumburl="panos/ENT-1.tiles/thumb.jpg" lat="18.48575556" lng="-69.94876389" alt="25.37" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="-353.685" vlookat="-2.925" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/ENT-1.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/ENT-1.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-9.384" atv="6.936" linkedscene="scene_ent-2" linkedscene_lookat="192.46,-1.28,120.0" />
+
+	</scene>	
 
 	
 	<scene name="scene_CD-00" title="CD-00" onstart="" thumburl="panos/CD-00.tiles/thumb.jpg" lat="18.48545833" lng="-69.94864444" alt="22.73" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3" >
@@ -513,21 +527,6 @@
 
 	</scene>
 
-	<scene name="scene_ENT-1" title="ENT-1" onstart="" thumburl="panos/ENT-1.tiles/thumb.jpg" lat="18.48575556" lng="-69.94876389" alt="25.37" heading="0.0" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
-		
-		<control bouncinglimits="calc:image.cube ? true : false" />
-
-		<view hlookat="-353.685" vlookat="-2.925" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/ENT-1.tiles/preview.jpg" />
-
-		<image prealign="0|0.0|0">
-			<cube url="panos/ENT-1.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664" />
-		</image>
-
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-9.384" atv="6.936" linkedscene="scene_ent-2" linkedscene_lookat="192.46,-1.28,120.0" />
-
-	</scene>
 
 	<scene name="scene_ENT-2" title="ENT-2" onstart="" thumburl="panos/ENT-2.tiles/thumb.jpg" lat="" lng="" alt="" heading="" soundurl="%CURRENTXML%/audio/MUSICA-BIBLIOTECA.mp3">
 		
