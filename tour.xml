@@ -82,6 +82,18 @@
 		</image>
 
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="-9.384" atv="6.936" linkedscene="scene_ent-2" linkedscene_lookat="192.46,-1.28,120.0" />
+		
+		<action name="ocultar">
+			tween(hotspot[Bienvenido].alpha, 0.0, 1.5);
+			tween(hotspot[Creditos].alpha, 0.0, 1.5);
+			set(hotspot[Creditos].enabled, false);
+			set(hotspot[Bienvenido].enabled, false);
+			set(hotspot[spot1].visible, true);
+			set(hotspot[spot2].visible, true);
+			set(hotspot[Creditos].keep, true);
+			set(hotspot[Bienvenido].keep, true);
+		</action>
+		
 		<hotspot name="Bienvenido"
 			type="image"
 			url="recursos/Introduccion_biblioteca.png"
