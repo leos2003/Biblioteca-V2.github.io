@@ -20,7 +20,7 @@
 			url="skin/logo.png"
 			align="center"
 			y="-70"
-			scale="0.2"
+			scale="1"
 			enabled="false"
 			alpha="0"
 			vr="true"
