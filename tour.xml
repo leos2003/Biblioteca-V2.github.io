@@ -2,6 +2,49 @@
 
 	<include url="skin/vtourskin.xml" />
 
+
+	<layer name="intro"
+		type="container"
+		keep="true"
+		width="100%"
+		height="100%"
+		bgcolor="0x000000"
+		bgalpha="0.8"
+		zorder="9999"
+		enabled="true"
+		bgcapture="true"
+		vr="true"
+		onloaded="on_intro_loaded()"
+		onclick="on_intro_click()">
+		<layer name="intro_logo"
+			url="skin/logo.png"
+			align="center"
+			y="-70"
+			scale="0.2"
+			enabled="false"
+			alpha="0"
+			vr="true"
+		/>
+	</layer>
+
+	<action name="on_intro_click">
+		tween(layer[intro].alpha, 0);
+		set(layer[intro].enabled, false);
+		set(hotspot[Bienvenido].visible, true);
+		set(hotspot[Creditos].visible, true);
+		set(hotspot[Creditos].alpha, 1);
+		set(hotspot[Bienvenido].alpha, 1);
+	</action>
+
+	<action name="on_intro_loaded">
+		set(hotspot[spot1].visible, false);
+		set(hotspot[spot2].visible, false);
+		delayedcall(2,
+		tween(layer[intro_logo].alpha, 1);
+		tween(layer[intro_guide].alpha, 1);
+		);
+	</action>
+
 	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
 	<skin_settings maps="true"
 	               maps_type="google"
