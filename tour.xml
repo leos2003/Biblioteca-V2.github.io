@@ -82,6 +82,18 @@
 		</image>
 
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="-9.384" atv="6.936" linkedscene="scene_ent-2" linkedscene_lookat="192.46,-1.28,120.0" />
+		<hotspot name="Bienvenido"
+			type="image"
+			url="recursos/Introduccion_biblioteca.png"
+			ath="0"
+			atv="0"
+			depth="1800"
+			rx="0" ry="0" rz="0"
+			ox="0.0" oy="0.0"
+			tx="0" ty="0" tz="0"
+			visible="false"
+			distorted="true"
+			onclick="ocultar();" />
 
 	</scene>	
 
