@@ -26,6 +26,9 @@
 			vr="true"
 		/>
 	</layer>
+	<layer name="creditos" url="recursos/creditos.png" keep="true" enabled="true" align="centercenter" x="0" y="0" visible="false" alpha="1" scale="0.6" scale.mobile="0.2" onclick="set(layer[creditos].visible,false);"/>
+
+  	<layer name="botoncreditos" url="recursos/gid.png" keep="true" enabled="true" align="leftbottom" x="10" y="5" scale="0.4" scale.mobile="0.2" onclick="set(layer[creditos].visible,true);"/>
 
 	<action name="on_intro_click">
 		tween(layer[intro].alpha, 0);
